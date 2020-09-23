@@ -760,6 +760,7 @@ h4 {
 
 .white {
     color: #FFFFFF !important;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
 }
