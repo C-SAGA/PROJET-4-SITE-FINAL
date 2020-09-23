@@ -12,7 +12,6 @@ button {
     transition: all .3s ease-in-out;
     outline: none!important;
     cursor: pointer;
-    background: #F3976C;
     color: black!important;
     letter-spacing: 3px;
 }
@@ -559,6 +558,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-display: swap;
     font-size: 32px;
     width: 50px;
     height: 50px;
