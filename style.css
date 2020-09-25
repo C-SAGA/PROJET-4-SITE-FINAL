@@ -822,6 +822,10 @@ p {
     margin: auto auto auto auto;
 }
 
+.social p{
+    display: none;
+}
+
 h2 {
   
     line-height: 1.2em;
