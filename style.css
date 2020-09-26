@@ -451,8 +451,11 @@ a:hover {
 
 
 .nav > li a:hover,
-.nav > li a:focus {
+.nav > li a:focus,
+.navbar-brand:focus,
+a[data-gallery-id="gallery-1"]:focus{
     background: transparent;
+    border-bottom: 1px solid black;
 }
 
 @keyframes animate{
@@ -657,7 +660,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 40px!important;
    
 }
 
@@ -902,6 +905,19 @@ h3 {
     text-transform: uppercase;
     font-weight: bold;
     color: #333333!important;
+}
+
+.title {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.title-fw {
+    border-bottom: 2px solid #333333!important;
+}
+
+.title-fb {
+    border-bottom: 2px solid #F3976C !important;
 }
 
 .med-width-whitespace {
