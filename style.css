@@ -488,6 +488,7 @@ nav li a:hover:before{
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
+        overflow: auto;
     }
     .nav-invert .site-navigation {
         left: 0;
