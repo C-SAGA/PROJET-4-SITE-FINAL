@@ -96,6 +96,11 @@ mod_gzip_item_include handler ^application/x-httpd-php
 mod_gzip_item_exclude mime ^image/.*
 </IfModule>
 
+@font-face {
+    font-display: auto;
+  }
+
+
 
 body {
     margin: 0;
@@ -841,7 +846,7 @@ a {
 }
 
 .row h4{
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .container {
