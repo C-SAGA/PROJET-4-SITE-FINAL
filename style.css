@@ -459,6 +459,12 @@ a:hover {
     line-height: 1.6;
 }
 
+blockquote blockquote{
+    color: black;
+    font weight: bold;
+    font-size: 19px;
+}
+
 .nav > li a:hover,
 .nav > li a:focus,
 .navbar-brand:focus,
