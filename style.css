@@ -101,7 +101,12 @@ mod_gzip_item_exclude mime ^image/.*
     font-family: Helvetica;
     font-display: swap;
   }
-  
+
+main{
+    margin-top: -15px;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -475,6 +480,9 @@ q, blockquote footer{
     color: black;
 }
 
+.text-center_mg-lg_tc-white_tight-width-whitespace{
+    color: #F3976C!important;
+}
 
 .nav > li a:hover,
 .nav > li a:focus,
@@ -899,6 +907,7 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    font-size: 18px;
 }
 
 #contact_email {
