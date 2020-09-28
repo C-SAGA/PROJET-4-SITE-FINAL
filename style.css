@@ -466,6 +466,11 @@ blockquote blockquote{
     font-size: 19px;
 }
 
+q, blockquote footer{
+    color: black;
+}
+
+
 .nav > li a:hover,
 .nav > li a:focus,
 .navbar-brand:focus,
@@ -891,6 +896,21 @@ p {
     margin: auto auto auto auto;
 }
 
+#contact_email {
+    font-weight: 700;
+}
+
+label {
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.btn-atomic-tangerine:hover {
+    background: #c27956!important;
+    color: #fff!important;
+}
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
