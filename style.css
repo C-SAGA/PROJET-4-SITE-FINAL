@@ -97,6 +97,11 @@ mod_gzip_item_exclude mime ^image/.*
 </IfModule>
 
 
+@font-face {
+    font-family: Helvetica;
+    font-display: swap;
+  }
+  
 body {
     margin: 0;
     padding: 0;
