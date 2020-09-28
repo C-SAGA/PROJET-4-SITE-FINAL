@@ -209,7 +209,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.jpg");
+    background: url("img/texture-paper.jpgjpg");
     background-size: 280px 280px;
 }
 
@@ -1033,6 +1033,7 @@ h4 {
     background: #F3976C;
     color: black!important;
     letter-spacing: 3px;
+    padding: 5px;
 }
 
 .btn-atomic-tangerine:hover {
