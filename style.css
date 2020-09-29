@@ -115,8 +115,7 @@ a,
 button {
     transition: all .2s ease-in-out;
     outline: none!important;
-    cursor: pointer;
-   
+    cursor: pointer; 
     color: black!important;
     letter-spacing: 3px;
     -webkit-transition: all .2s ease-in-out;
@@ -426,10 +425,18 @@ a:hover {
     line-height: 44px;
 }
 
+.navbar-brand a:hover{
+    background-color: #F3976C;
+    color: white;
+    transition: all .3s ease-in-out;
+    outline: 0!important;
+}
+
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+   
 }
 
 .navbar-brand img[src$=svg] {
@@ -508,21 +515,23 @@ a[data-gallery-id="gallery-1"]:focus{
     }
 }
 
-nav li a{
+nav li a,
+header a{
       position: relative;
       display: block;
       color: black;
       font-weight: bold;
       text-decoration: none;
-      transition: 0.4s;
-      -webkit-transition: 0.4s;
-      -moz-transition: 0.4s;
-      -ms-transition: 0.4s;
-      -o-transition: 0.4s;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
       overflow: hidden;
 }
 
-nav li a:before{
+nav li a:before,
+header a:before{
         content: "";
         position: absolute;
         top: calc (50% - 2px);
@@ -537,13 +546,11 @@ nav li a:before{
         -o-transition: 0.5s;
 }
 
-nav li a:hover{
-    color: black;
-}
 
-nav li a:hover:before{
-    animation: animate 0.5s linear forwards;
-    -webkit-animation: animate 0.4s linear forwards;
+nav li a:hover:before,
+header a:hover:before{
+    animation: animate 0.3s linear forwards;
+    -webkit-animation: animate 0.3s linear forwards;
 }
   
 
@@ -659,7 +666,13 @@ nav .caret {
 }
 
 .btn {
-    margin: 0 5px 5px 0;
+    margin: 2px 5px 5px 2px;
+    border-radius: 6px;
+    line-height: 1.4;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .btn.pull-right {
