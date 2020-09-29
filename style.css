@@ -1,4 +1,4 @@
-# BEGIN Cache-Control Headers
+#BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
  <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
  Header set Cache-Control "max-age=2592000, public"
@@ -9,15 +9,15 @@
 <filesMatch "\.(html|htm)$">
 Header set Cache-Control "max-age=7200, public"
 </filesMatch>
-# Disable caching for scripts and other dynamic files
+#Disable caching for scripts and other dynamic files
 <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
 Header unset Cache-Control
 </FilesMatch>
 </IfModule>
-# END Cache-Control Headers
+#END Cache-Control Headers
 Cache-Control: max-age=31536000
 
-# BEGIN Expire headers
+#BEGIN Expire headers
 <IfModule mod_expires.c>
  ExpiresActive On
  ExpiresDefault "access plus 7200 seconds"
@@ -37,10 +37,10 @@ Cache-Control: max-age=31536000
  ExpiresByType application/x-javascript "access plus 2592000 seconds"
  ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
 </IfModule>
-# END Expire headers
+#END Expire headers
 Cache-Control: max-age=31536000
 
-# MOD_DEFLATE COMPRESSION
+#MOD_DEFLATE COMPRESSION
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
 #Pour les navigateurs incompatibles
