@@ -454,7 +454,7 @@ main{
 .nav li a{
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .navbar-brand img[src$=svg] {
