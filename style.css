@@ -130,8 +130,6 @@ a:hover {
 }
 
 
-
-
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -166,6 +164,13 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
+#accueil{
+    margin-right: 20rem;
+    list-style: none;
+    padding-bottom: 2em;
+}
+
 
 .sr-only{
     border: 0;
@@ -485,6 +490,7 @@ main{
 
 #text-align{
     text-align: center;
+    background-image: url("img/texture-paper.png");
 }
 
 
