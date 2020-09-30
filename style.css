@@ -162,6 +162,11 @@ a:hover {
     background-color: black;
 }
 
+#formulaire{
+    display: flex;
+    justify-content: center;
+}
+
 .sr-only{
     border: 0;
     clip: rect(0,0,0,0);
@@ -478,7 +483,9 @@ main{
     vertical-align: middle;
 }
 
-
+#text-align{
+    text-align: center;
+}
 
 
 
@@ -912,9 +919,7 @@ a {
     font-size: 35px;
 }
 
-.container {
-    max-width: 1000px;
-}
+
 
 .hero-bloc-text {
     font-size: 38px;
