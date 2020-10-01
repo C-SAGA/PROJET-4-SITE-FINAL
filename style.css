@@ -53,10 +53,11 @@ SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
 #les proxies doivent donner le bon contenu
 Header append Vary User-Agent env=!dont-vary
 
+
 RewriteEngine on
 #Check to see if browser can accept gzip files. If so and we have it - serve it!
-ReWriteCond %{HTTP:accept-encoding} gzip
-RewriteCond %{HTTP_USER_AGENT} Safari
+ReWriteCond %HTTP:accept-encoding gzip
+RewriteCond %HTTP_USER_AGENT !Safari
 #make sure there's no trailing .gz on the url
 ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
 #check to see if a .gz version of the file exists.
