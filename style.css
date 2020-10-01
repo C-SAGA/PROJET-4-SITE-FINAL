@@ -513,6 +513,10 @@ main{
     line-height: 1.6;
 }
 
+#titreh4{
+    font-size: 20px;
+}
+
 blockquote blockquote{
     color: black;
     font weight: bold;
