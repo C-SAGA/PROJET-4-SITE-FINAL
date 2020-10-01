@@ -56,7 +56,7 @@ Header append Vary User-Agent env=!dont-vary
 RewriteEngine on
 #Check to see if browser can accept gzip files. If so and we have it - serve it!
 ReWriteCond %{HTTP:accept-encoding} gzip
-RewriteCond %{HTTP_USER_AGENT} !Safari
+RewriteCond %{HTTP_USER_AGENT} Safari
 #make sure there's no trailing .gz on the url
 ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
 #check to see if a .gz version of the file exists.
@@ -127,9 +127,6 @@ mod_gzip_item_exclude mime ^image/.*
   En-tête ajouter Vary User-Agent
 </IfModule>
 
-main{
-    margin-top: -15px;
-}
 
 
 body {
