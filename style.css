@@ -571,13 +571,13 @@ a[data-gallery-id="gallery-1"]:focus{
 
 @keyframes animate{
     0%{
-        top: calc(50% - 2 px);
+        top: calc(50% - 2px);
         left: 0;
         height: 4px; 
         z-index: 1;
     }
     50%{
-        top: calc(50% - 2 px);
+        top: calc(50% - 2px);
         left: 0;
         height: 4px; 
         z-index: 1;
@@ -621,8 +621,8 @@ header a:before{
         -o-transition: 0.3s;
 }
 
-nav li a:hover:before,
-header a:hover:before{
+nav li a:hover::before,
+header a:hover::before{
     animation: animate 0.3s linear forwards;
     -webkit-animation: animate 0.3s linear forwards;
 }
@@ -1175,9 +1175,7 @@ h4 {
 
 <!-- page2 -->
 
-ul{
-    margin-right: 180px;
-}
+
 
 
 @media (max-width: 1024px) {
@@ -1231,6 +1229,7 @@ ul{
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
