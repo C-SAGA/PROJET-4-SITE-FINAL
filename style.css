@@ -1172,13 +1172,7 @@ h4 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
-
-<!-- page2 -->
-
-
-
-
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -1226,10 +1220,10 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left, 2px);
+        padding-right: env(safe-area-inset-right, 2px);
     }
-    
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1238,8 +1232,7 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+           
     }
 }
 
