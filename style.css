@@ -97,7 +97,7 @@ mod_gzip_item_exclude mime ^image/.*
 </IfModule>
 
 <IfModule mod_deflate.c>
-  # Compresser HTML, CSS, JavaScript, Texte, XML et polices
+  #Compresser HTML, CSS, JavaScript, Texte, XML et polices
   AddOutputFilterByType application DEFLATE / javascript
   AddOutputFilterByType application DEFLATE / rss + xml
   AddOutputFilterByType application DEFLATE / vnd.ms-fontobject
@@ -120,7 +120,7 @@ mod_gzip_item_exclude mime ^image/.*
   AddOutputFilterByType DEFLATE text / plain
   AddOutputFilterByType DEFLATE texte / xml
 
-  # Supprimer les bogues du navigateur (nécessaire uniquement pour les navigateurs vraiment anciens)
+  #Supprimer les bogues du navigateur (nécessaire uniquement pour les navigateurs vraiment anciens)
   BrowserMatch ^ Mozilla / 4 gzip-only-text / html
   BrowserMatch ^ Mozilla / 4 \ .0 [678] no-gzip
   BrowserMatch \ bMSIE! No-gzip! Gzip-only-text / html
