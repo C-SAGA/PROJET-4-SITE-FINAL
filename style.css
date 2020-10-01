@@ -605,8 +605,8 @@ header a{
       overflow: hidden;
 }
 
-nav li a:before,
-header a:before{
+nav li a::before,
+header a::before{
         content: "";
         position: absolute;
         top: calc (50% - 2px);
