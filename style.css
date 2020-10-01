@@ -1220,8 +1220,6 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left, 0);
-        padding-right: constant(safe-area-inset-right, 0);
     }
 
     .bloc-group,
