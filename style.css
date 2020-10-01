@@ -44,7 +44,7 @@ Cache-Control: max-age=31536000
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/x-httpd-php
 #Pour les navigateurs incompatibles
-BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch Mozilla/4 gzip-only-text/html
 BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
@@ -59,9 +59,9 @@ RewriteEngine on
 ReWriteCond %HTTP:accept-encoding gzip
 RewriteCond %HTTP_USER_AGENT !Safari
 #make sure there's no trailing .gz on the url
-ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
+ReWriteCond %{REQUEST_FILENAME} !^ .+ \.gz$
 #check to see if a .gz version of the file exists.
-RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteCond %REQUEST_FILENAME.gz -f
 #All conditions met so add .gz to URL filename (invisibly)
 RewriteRule ^(.+) $1.gz [QSA,L]
 <IfModule mod_gzip.c>
@@ -130,7 +130,7 @@ mod_gzip_item_exclude mime ^image/.*
 
 
 
-body {
+body{
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -138,6 +138,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+   
+
 
 a,
 button {
