@@ -856,11 +856,10 @@ p {
     font-size: 18px;
 }
 
-
-
-#contact{
+#contact_email{
     color: blue;
     text-decoration: underline;
+    font-weight: 700;
 }
 
 .adresse{
