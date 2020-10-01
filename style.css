@@ -571,13 +571,13 @@ a[data-gallery-id="gallery-1"]:focus{
 
 @keyframes animate{
     0%{
-        top: calc (50% - 2 px);
+        top: calc(50% - 2 px);
         left: 0;
         height: 4px; 
         z-index: 1;
     }
     50%{
-        top: calc (50% - 2 px);
+        top: calc(50% - 2 px);
         left: 0;
         height: 4px; 
         z-index: 1;
