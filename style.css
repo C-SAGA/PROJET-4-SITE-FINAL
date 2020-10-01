@@ -96,6 +96,36 @@ mod_gzip_item_include handler ^application/x-httpd-php
 mod_gzip_item_exclude mime ^image/.*
 </IfModule>
 
+<IfModule mod_deflate.c>
+  # Compresser HTML, CSS, JavaScript, Texte, XML et polices
+  AddOutputFilterByType application DEFLATE / javascript
+  AddOutputFilterByType application DEFLATE / rss + xml
+  AddOutputFilterByType application DEFLATE / vnd.ms-fontobject
+  AddOutputFilterByType application DEFLATE / police x
+  AddOutputFilterByType application DEFLATE / x-font-opentype
+  AddOutputFilterByType application DEFLATE / x-font-otf
+  AddOutputFilterByType application DEFLATE / x-font-truetype
+  AddOutputFilterByType application DEFLATE / x-font-ttf
+  AddOutputFilterByType application DEFLATE / x-javascript
+  AddOutputFilterByType application DEFLATE / xhtml + xml
+  AddOutputFilterByType application DEFLATE / xml
+  AddOutputFilterByType DEFLATE police / opentype
+  AddOutputFilterByType DEFLATE police / otf
+  AddOutputFilterByType DEFLATE police / ttf
+  AddOutputFilterByType DEFLATE image / svg + xml
+  AddOutputFilterByType DEFLATE image / icône x
+  AddOutputFilterByType DEFLATE texte / css
+  AddOutputFilterByType DEFLATE texte / html
+  AddOutputFilterByType DEFLATE text / javascript
+  AddOutputFilterByType DEFLATE text / plain
+  AddOutputFilterByType DEFLATE texte / xml
+
+  # Supprimer les bogues du navigateur (nécessaire uniquement pour les navigateurs vraiment anciens)
+  BrowserMatch ^ Mozilla / 4 gzip-only-text / html
+  BrowserMatch ^ Mozilla / 4 \ .0 [678] no-gzip
+  BrowserMatch \ bMSIE! No-gzip! Gzip-only-text / html
+  En-tête ajouter Vary User-Agent
+</IfModule>
 
 main{
     margin-top: -15px;
@@ -519,7 +549,7 @@ main{
 
 blockquote blockquote{
     color: black;
-    font weight: bold;
+    font-weight: bold;
     font-size: 19px;
 }
 
