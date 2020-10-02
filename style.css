@@ -32,6 +32,8 @@ ExpiresDefault "access plus 2 days"
 </IfModule>
 #END Expires Headers
 
+cache-control: max-age=31536000
+
 body {
     margin: 0;
     padding: 0;
