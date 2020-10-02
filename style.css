@@ -417,11 +417,13 @@ main{
     vertical-align: middle;
 }
 
-#text-align{
+#text-align, #titre1, #titre0{
     text-align: center;
     background-image: url("img/texture-paper.png");
     letter-spacing: 3px;
     font-weight: bolder;
+    font-size: 4em;
+    background: transparent;
 }
 
 
