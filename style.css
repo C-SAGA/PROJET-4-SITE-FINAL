@@ -388,6 +388,8 @@ main{
 #text-align{
     text-align: center;
     background-image: url("img/texture-paper.png");
+    letter-spacing: 3px;
+    font-weight: bolder;
 }
 
 
@@ -851,7 +853,6 @@ p {
 }
 
 .tight-width-whitespace {
-  
     margin: auto auto auto auto;
     font-size: 18px;
 }
