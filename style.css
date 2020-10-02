@@ -910,6 +910,10 @@ label {
     width: 80%;
 }
 
+#adresse_contact{
+    font-weight: revert;
+}
+
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #fff!important;
