@@ -35,7 +35,7 @@ ExpiresDefault "access plus 2 days"
 cache-control: max-age=31536000
 
 @font-face{
-    font-display: :optional; 
+    font-display: :swap; 
 }
 
 body {
