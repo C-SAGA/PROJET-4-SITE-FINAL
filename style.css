@@ -1,3 +1,4 @@
+
 cache-control: max-age=31536000
 
 @font-face{
@@ -331,8 +332,7 @@ main{
 }
 
 #bloc-1-hero h1 {
-    font-size: 4em;
-    color: #F3976C;
+    font-size: 32px;
 }
 
 .navbar {
@@ -355,10 +355,7 @@ main{
     outline: 0!important;
 }
 
-#h1page1{
-    color: #F3976C;
-    font-size: 4em;
-}
+
 
 .navbar-brand img {
     max-height: 200px;
